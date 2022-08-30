@@ -1,0 +1,46 @@
+id: bridge-motorway-casing
+type: line
+source: geolonia
+source-layer: transportation
+minzoom: 8
+filter:
+  - all
+  - - '=='
+    - brunnel
+    - bridge
+  - - '=='
+    - class
+    - motorway
+layout:
+  line-join: round
+paint:
+  line-color: '#4ed19e'
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 8
+    - 0
+    - 11
+    - 1
+  line-width:
+    - interpolate
+    - - exponential
+      - 0.9
+    - - zoom
+    - 5
+    - 0.4
+    - 9
+    - 0.6
+    - 12
+    - 0.9
+    - 14
+    - 4
+    - 16
+    - 14
+    - 18
+    - 24
+    - 19
+    - 72
+    - 20
+    - 166

@@ -1,0 +1,6 @@
+id: background
+type: background
+layout:
+  visibility: visible
+paint:
+  background-color: rgba(49, 41, 41, 1)

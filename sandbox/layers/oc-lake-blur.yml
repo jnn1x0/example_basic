@@ -1,0 +1,36 @@
+id: oc-lake-blur
+type: line
+source: geolonia
+source-layer: oc-water
+minzoom: 17
+filter:
+  - all
+  - - '=='
+    - - get
+      - class
+    - lakes
+  - - '=='
+    - - has
+      - jflag
+    - false
+layout:
+  line-join: round
+  line-round-limit: 0.5
+  visibility: visible
+paint:
+  line-color: '#62cffc'
+  line-width:
+    stops:
+      - - 17
+        - 3
+      - - 20
+        - 5
+  line-translate:
+    stops:
+      - - 17
+        - - 1
+          - 1
+      - - 20
+        - - -2
+          - -2
+  line-blur: 2

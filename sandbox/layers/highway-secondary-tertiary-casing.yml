@@ -1,0 +1,42 @@
+id: highway-secondary-tertiary-casing
+type: line
+source: geolonia
+source-layer: transportation
+minzoom: 8
+filter:
+  - all
+  - - '!in'
+    - brunnel
+    - bridge
+    - tunnel
+  - - in
+    - class
+    - secondary
+    - tertiary
+layout:
+  line-cap: round
+  line-join: round
+  visibility: visible
+paint:
+  line-color: rgba(222, 222, 222, 1)
+  line-width:
+    - interpolate
+    - - exponential
+      - 0.9
+    - - zoom
+    - 5
+    - 0.4
+    - 9
+    - 0.6
+    - 12
+    - 0.9
+    - 14
+    - 4
+    - 16
+    - 14
+    - 18
+    - 24
+    - 19
+    - 72
+    - 20
+    - 166
