@@ -18,7 +18,7 @@
       "minzoom": 13
     }
   },
-  "sprite": "https://jnn1x0.github.io/example_basic/basic",
+  "sprite": "https://jnn1x0.github.io/example_basic",
   "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
   "layers": [
     {
